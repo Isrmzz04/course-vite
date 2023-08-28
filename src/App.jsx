@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import 'remixicon/fonts/remixicon.css'
+import('preline')
 import Home from "./pages/Home"
 import ProductList from "./pages/ProductList"
 import ProductDetail from "./pages/ProductDetail"
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         element: <ProductDetail />
       },
       {
-        path: "checkout",
+        path: "checkout/:id",
         element: <Checkout />
       }
     ]

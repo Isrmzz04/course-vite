@@ -5,8 +5,8 @@ import Card from "../components/Layouts/Card"
 import Pagination from "../components/Layouts/Pagination"
 
 const ListProducts = () => {
-  const { entities } =  useSelector((state) => state.product)
-  const dispatch =  useDispatch()
+  const { entities } = useSelector((state) => state.product)
+  const dispatch = useDispatch()
 
   const fetchProducts = () => {
     dispatch(getAll())
@@ -17,12 +17,12 @@ const ListProducts = () => {
   }, [])
 
   return (
-    <div className="bg-[#CEE6F3]/40 min-h-screen py-10">
+    <div className="px-[72px] py-[89px]">
       <div className="">
-        <div className="gap-5 px-[72px] py-[89px] flex flex-wrap">
+        <div className="gap-5 flex flex-wrap mb-10">
           <Card products={entities} />
         </div>
-      {/* Jenis Program */}
+        {/* Jenis Program */}
       </div>
       <Pagination />
     </div>

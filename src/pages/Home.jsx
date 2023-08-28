@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Outlet />
+      <div className="bg-[#CEE6F3]/40 min-h-screen">
+        <Outlet />
+      </div>
       <Footer />
     </div>
 
