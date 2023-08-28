@@ -1,16 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { getDetail } from "../store/product/action"
 import { useEffect, useRef } from "react"
 import { toIdr } from "../components/utils/toIdr"
-import Button from "../components/Elements/Button"
 import MateriList from "../components/Layouts/MateriList"
-import { useNavigate } from "react-router-dom"
 import CTA from "../components/Layouts/CTA"
-import { useState } from "react"
 
 const DetailProduct = () => {
-  const navigate = useNavigate()
   const { id } = useParams()
   const dispacth = useDispatch()
   const { entity } = useSelector((state) => state.product)
@@ -97,8 +93,8 @@ const DetailProduct = () => {
               )
             }
           </div>
-          <div className="mt-5 text-center">
-            <Button variant="bg-[#FFCD29] text-white" onClick={() => navigate("/checkout/" + id)}>Daftar Kelas</Button>
+          <div className="mt-8 text-center">
+            <Link to="/checkout" state={{data: entity}} className="text-[14px] py-[10px] px-[24px] rounded-[50px] bg-[#FFCD29] text-white">Daftar Kelas</Link>
           </div>
         </div>
         <div className="space-y-10">

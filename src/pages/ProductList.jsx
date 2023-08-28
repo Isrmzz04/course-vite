@@ -19,7 +19,7 @@ const ListProducts = () => {
   return (
     <div className="px-[72px] py-[89px]">
       <div className="">
-        <div className="gap-5 flex flex-wrap mb-10">
+        <div className="gap-x-5 gap-y-10 flex flex-wrap mb-10 justify-evenly">
           <Card products={entities} />
         </div>
         {/* Jenis Program */}
