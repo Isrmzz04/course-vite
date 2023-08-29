@@ -7,6 +7,7 @@ import ProductDetail from "./pages/ProductDetail"
 import Checkout from "./pages/Checkout"
 import { Provider } from "react-redux"
 import store from "./store/store"
+import Payment from "./pages/Payment"
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "checkout/",
         element: <Checkout />
+      },
+      {
+        path: "payment/",
+        element: <Payment />
       }
     ]
   }

@@ -11,7 +11,7 @@ const Order = ({ value }) => {
     return (
         <div className="bg-white w-full shadow-sm shadow-slate-500/30 rounded-[20px] py-12 px-10">
             <h2 className="text-[18px] font-[600] text-[#131313] mb-5">Ringkasan Pesanan</h2>
-            <div className="flex gap-4 overflow-hidden">
+            <div className="flex overflow-hidden">
                 <div className="w-1/3 bg-cover">
                     <img src={imageOrder} alt="" />
                 </div>
@@ -76,7 +76,8 @@ const Order = ({ value }) => {
                     <i className="ri-arrow-left-s-line text-lg"></i>
                     <Link to="/" className="text-sm">Batalkan</Link>
                 </span>
-                <Button variant="bg-[#2A61A8] text-white px-16">Bayar</Button>
+                {/* <Button variant="bg-[#2A61A8] text-white px-16">Bayar</Button> */}
+                <Link to="/payment" state={{ data: value }}>Bayar</Link>
             </div>
         </div>
     )

@@ -103,7 +103,7 @@ const DetailProduct = () => {
         </div>
 
       </div>
-      <CTA />
+      <CTA title="Sudah siap bergabung?" buttonTittle="Daftar Kelas" />
     </>
   )
 }
