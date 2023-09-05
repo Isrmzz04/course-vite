@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom"
-import { useParams } from "react-router-dom"
 import longLeftArrow from "../assets/images/long-left-arrow.png"
 import MethodPayment from "../components/Layouts/MethodPayment"
 import Order from "../components/Layouts/Order"
-import { useDispatch, useSelector } from "react-redux"
-import { getDetail } from "../store/product/action"
-import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 
 const Checkout = () => {
