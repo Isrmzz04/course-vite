@@ -1,5 +1,5 @@
 import Axios from "axios"
 
 export const httpService = Axios.create({
-    baseURL: import.meta.env.VITE_BASE_PRODUCTS_URL
+    baseURL: "https://64eb63d3e51e1e82c5774b94.mockapi.io"
 })
