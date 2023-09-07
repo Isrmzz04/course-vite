@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../Elements/Button/index";
 
 const navItems = [
@@ -20,7 +21,10 @@ const navItems = [
 const Header = () => {
   return (
     <div className="fixed w-full h-fit lg:h-[45px] bg-[#152A46] inset-0 px-[5%] py-[25px] lg:py-[55px] text-white flex justify-between lg:items-center z-50">
-      <h1 className="text-[20px] font-bold">LOGO</h1>
+      <Link to="/">
+        <h1 className="text-[20px] font-bold">LOGO</h1>
+      </Link>
+
       <nav className="lg:flex items-center gap-x-14 hidden">
         <ul className="flex gap-5 text-[14px]">
           {navItems.map((item, index) => (

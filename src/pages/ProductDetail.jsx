@@ -75,8 +75,8 @@ const DetailProduct = () => {
 
   return (
     <>
-      <div className="flex gap-10 px-[72px] py-[89px]">
-        <div className="w-fit h-[256px] bg-white shadow-md shadow-slate-500/30 rounded-[20px]">
+      <div className="flex gap-10 px-[5%] lg:px-[72px] py-[89px] justify-center flex-wrap lg:flex-nowrap">
+        <div className="w-full lg:w-fit h-[256px] bg-white shadow-md shadow-slate-500/30 rounded-[20px]">
           <ul className="pb-2 pt-5 font-[500] leading-8 border-b">
             <li className="cursor-pointer hover:bg-[#F1F7FF] hover:border-r-4 hover:border-[#197BFF] px-10 py-2 hover:text-[#197BFF]" onClick={() => goTo(MateriRef.current)}>Materi</li>
             <li className="cursor-pointer hover:bg-[#F1F7FF] hover:border-r-4 hover:border-[#197BFF] px-10 py-2 hover:text-[#197BFF]" onClick={() => goTo(fasilitasRef.current)}>Fasilitas</li>

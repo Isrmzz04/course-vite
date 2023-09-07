@@ -10,16 +10,16 @@ const Checkout = () => {
   const data = location.state.data
 
   return (
-    <div className="px-[72px] py-[49px]">
-      <span className="flex items-center gap-2 text-[#6D7175]/60">
-        <img src={longLeftArrow} alt="" />
+    <div className="px-[5%] lg:px-[72px] py-[49px]">
+      <span className="flex items-center gap-2 text-[#6D7175]/60 text-sm">
+        <img src={longLeftArrow} alt="" className="h-3" />
         <Link to={`/detail/${data.id}`} className="text-[#1097E7]">Checkout</Link>
         <i className="ri-arrow-right-s-line text-lg"></i>
         <span>Instruksi Bayar</span>
       </span>
       <div className="mt-10">
-        <h1 className="text-[28px] font-[600] text-[#131313]">Checkout</h1>
-        <div className="mt-5 flex gap-10">
+        <h1 className="text-xl lg-text-[28px] font-[600] text-[#131313]">Checkout</h1>
+        <div className="mt-5 flex gap-10 flex-wrap lg:flex-nowrap">
           <MethodPayment />
           <Order value={data} />
         </div>

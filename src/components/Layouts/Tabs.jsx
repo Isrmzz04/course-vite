@@ -13,7 +13,7 @@ const Tabs = () => {
                 <label htmlFor="Tab" className="sr-only">Tab</label>
                 <select
                     id="Tab"
-                    className="w-full rounded-md border-gray-200"
+                    className="w-full rounded-md border-gray-200 py-2 px-4"
                     value={selectedTab}
                     onChange={(e) => handleTabChange(e.target.value)}
                 >
@@ -56,7 +56,7 @@ const Tabs = () => {
             <div className="mt-5">
                 {selectedTab === 'ATM' && (
                     <div>
-                        <ol className="list-decimal ml-5">
+                        <ol className="list-decimal ml-5 space-y-1 text-sm lg:text-md">
                             <li>Masukkan kartu ke mesing ATM Mandiri</li>
                             <li>Pilih Bahasa</li>
                             <li>Masukkan PIN ATM</li>

@@ -41,7 +41,7 @@ const MethodPayment = () => {
     }, [])
 
     return (
-        <div className="bg-white w-full shadow-sm shadow-slate-500/30 rounded-[20px] py-6 px-10">
+        <div className="bg-white w-full shadow-sm shadow-slate-500/30 rounded-[20px] py-8 px-8 lg:px-10">
             <h2 className="text-[18px] font-[600] text-[#131313] mb-5">Pilih Metode Pembayaran</h2>
             <Accordion methodPayment={manualVerif} />
             <Accordion methodPayment={otoVerif} />

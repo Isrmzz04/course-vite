@@ -34,7 +34,7 @@ const Footer = () => {
                 <nav className="list-none mb-10">
                   {list.subtitle.map((v, i) => (
                     <li key={i}>
-                      <a className="text-[#A3A3A3] hover:text-gray-800" href="#">{v}</a>
+                      <a className="text-[#A3A3A3] hover:text-gray-800 text-sm lg:text-md" href="#">{v}</a>
                     </li>
                   ))}
                 </nav>
@@ -43,7 +43,7 @@ const Footer = () => {
             )}
           </div>
           <div className="">
-            <p className="text-[#A3A3A3] text-sm text-center -ml-[105px]">
+            <p className="text-[#A3A3A3] text-sm text-center lg:-ml-[105px]">
               Edspert, copyright. Alamat boleh ditaruh disini apabila diinginkan.
             </p>
           </div>
