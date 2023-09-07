@@ -1,4 +1,5 @@
 import yellowCheck from "../../assets/images/check-yellow.png"
+import imgtest from "../../assets/images/bank-bca.png"
 
 const MateriList = ({ headline, materiList, linkRef }) => {
     return (
@@ -9,7 +10,7 @@ const MateriList = ({ headline, materiList, linkRef }) => {
                     materiList.map((list, index) => (
                         <li key={index} className="py-2">
                             <div className="flex gap-2 items-center">
-                                <img src={yellowCheck} alt="" className="h-fit" />
+                                <img src={imgtest} alt="" className="h-fit" />
                                 <h3 className="font-[600] text-sm lg:text-[18px]">{list.subject}</h3>
                             </div>
                             <p className="ml-7 mt-1 text-[#868686] text-[14px]">{list.detail}</p>
