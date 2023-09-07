@@ -20,7 +20,7 @@ const navItems = [
 
 const Header = () => {
   return (
-    <div className="fixed w-full h-fit lg:h-[45px] bg-[#152A46] inset-0 px-[5%] py-[25px] lg:py-[55px] text-white flex justify-between lg:items-center z-50">
+    <div className="fixed w-full h-fit lg:h-[45px] bg-[#152A46] inset-0 px-[5%] lg:px-[120px] py-[25px] lg:py-[55px] text-white flex justify-between lg:items-center z-50">
       <Link to="/">
         <h1 className="text-[20px] font-bold">LOGO</h1>
       </Link>
