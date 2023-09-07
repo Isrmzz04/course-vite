@@ -36,9 +36,6 @@ const otoVerif = {
 }
 
 const MethodPayment = () => {
-    useEffect(() => {
-        console.log(manualVerif)
-    }, [])
 
     return (
         <div className="bg-white w-full shadow-sm shadow-slate-500/30 rounded-[20px] py-8 px-8 lg:px-10">
