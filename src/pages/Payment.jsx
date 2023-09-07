@@ -15,7 +15,7 @@ const Payment = () => {
         <div className="px-[5%] lg:px-[72px] py-[49px]">
             <span className="flex items-center gap-2 text-[#6D7175]/60 text-sm">
                 <img src={longLeftArrow} alt="" className="h-3" />
-                <Link to={`/detail/${data.id}`}>Checkout</Link>
+                <Link to={`/checkout`} state={{ data: data }}>Checkout</Link>
                 <i className="ri-arrow-right-s-line text-lg"></i>
                 <span className="text-[#1097E7]">Instruksi Bayar</span>
             </span>
