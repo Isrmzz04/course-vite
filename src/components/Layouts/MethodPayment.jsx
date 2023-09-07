@@ -1,6 +1,7 @@
 import Accordion from "../Elements/Accordion"
 import mandiri from "../../assets/images/bank-mandiri.png"
 import bca from "../../assets/images/bank-bca.png"
+import { useEffect } from "react"
 
 const manualVerif = {
     method: "Bank Transfer (verifikasi manual)",
@@ -35,6 +36,10 @@ const otoVerif = {
 }
 
 const MethodPayment = () => {
+    useEffect(() => {
+        console.log(manualVerif)
+    }, [])
+
     return (
         <div className="bg-white w-full shadow-sm shadow-slate-500/30 rounded-[20px] py-6 px-10">
             <h2 className="text-[18px] font-[600] text-[#131313] mb-5">Pilih Metode Pembayaran</h2>

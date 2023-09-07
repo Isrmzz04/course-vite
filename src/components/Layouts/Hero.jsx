@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom"
 const Hero = () => {
     const { id } = useParams()
     return (
-        <div className="relative w-full h-[621px] bg-[#152A46] pt-[28px] lg:px-[120px]">
+        <div className="relative w-full h-[621px] bg-[#152A46] pt-[28px] px-[5%] lg:px-[120px]">
             <Header />
             <div className="grid lg:grid-cols-2 h-full place-items-center">
                 <div className="w-full h-full min-h-[495px] flex flex-col justify-center text-white">

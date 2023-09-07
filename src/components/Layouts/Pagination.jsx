@@ -3,7 +3,7 @@
 const Pagination = () => {
     return (
         <div className="flex flex-col items-end px-5 py-5">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1 text-sm]">
                 <button type="button" className="w-full flex items-center gap-1 text-gray-600 mr-5">
                     <i className="ri-arrow-left-s-line text-xl"></i>
                     <span>Sebelumnya</span>

@@ -3,6 +3,7 @@ import longLeftArrow from "../assets/images/long-left-arrow.png"
 import MethodPayment from "../components/Layouts/MethodPayment"
 import Order from "../components/Layouts/Order"
 import { useLocation } from "react-router-dom"
+import { useEffect } from "react"
 
 const Checkout = () => {
   const location = useLocation()
