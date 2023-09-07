@@ -1,5 +1,6 @@
 import { toIdr } from "../utils/toIdr";
 import { useNavigate } from "react-router-dom";
+import personCard from "../../assets/images/img-order-transparent.png"
 const Card = ({ products }) => {
     const navigate = useNavigate();
 
@@ -18,7 +19,7 @@ const Card = ({ products }) => {
                     >
                         <div className="bg-[#152a46] flex pt-[16px] px-[24px] gap-6">
                             <img
-                                src="/assets/images/person.png"
+                                src={personCard}
                                 alt=""
                                 className="h-[100px]"
                             />
