@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom"
 import Hero from "../components/Layouts/Hero"
 import Footer from "../components/Layouts/Footer"
+import Header from "../components/Layouts/Header"
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Header />
       <div className="bg-[#CEE6F3]/40 min-h-screen">
         <Outlet />
       </div>

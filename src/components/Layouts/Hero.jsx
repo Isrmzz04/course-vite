@@ -1,4 +1,3 @@
-import Header from "./Header"
 import heroPerson from "../../assets/images/hero-person.png"
 import substractYellow from "../../assets/images/Subtract-yellow.png"
 import substractBlue from "../../assets/images/Subtract-blue.png"
@@ -7,8 +6,7 @@ import { useParams } from "react-router-dom"
 const Hero = () => {
     const { id } = useParams()
     return (
-        <div className="relative w-full h-[621px] bg-[#152A46] pt-[28px] px-[5%] lg:px-[120px]">
-            <Header />
+        <div className="relative w-full h-[621px] bg-[#152A46] pt-[28px] px-[5%] lg:px-[120px]">            
             <div className="grid lg:grid-cols-2 h-full place-items-center">
                 <div className="w-full h-full min-h-[495px] flex flex-col justify-center text-white">
                     <h1 className="font-[600] text-[42px] leading-[50px] mb-5">Jadi expert bersama <br /> edpsert.id {id}</h1>

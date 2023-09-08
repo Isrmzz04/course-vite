@@ -10,7 +10,7 @@ const Checkout = () => {
   const data = location.state.data
 
   return (
-    <div className="px-[5%] lg:px-[72px] py-[49px]">
+    <div className="px-[5%] lg:px-[72px] py-[49px] mt-20 lg:mt-24">
       <span className="flex items-center gap-2 text-[#6D7175]/60 text-sm">
         <img src={longLeftArrow} alt="" className="h-3" />
         <Link to={`/detail/${data.id}`} className="text-[#1097E7]">Checkout</Link>

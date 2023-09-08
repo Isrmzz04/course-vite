@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react"
 import { toIdr } from "../components/utils/toIdr"
 import MateriList from "../components/Layouts/MateriList"
 import CTA from "../components/Layouts/CTA"
+import HeroProductDetail from "../components/Layouts/HeroProductDetail"
 
 const DetailProduct = () => {
   const { id } = useParams()
@@ -75,6 +76,7 @@ const DetailProduct = () => {
 
   return (
     <>
+      <HeroProductDetail data={entity} />
       <div className="flex gap-10 px-[5%] lg:px-[72px] py-[89px] justify-center flex-wrap lg:flex-nowrap">
         <div className="w-full lg:w-fit h-[256px] bg-white shadow-md shadow-slate-500/30 rounded-[20px]">
           <ul className="pb-2 pt-5 font-[500] leading-8 border-b">
@@ -94,7 +96,7 @@ const DetailProduct = () => {
             }
           </div>
           <div className="mt-8 text-center">
-            <Link to="/checkout" state={{data: entity}} className="text-[14px] py-[10px] px-[24px] rounded-[50px] bg-[#FFCD29] text-white">Daftar Kelas</Link>
+            <Link to="/checkout" state={{ data: entity }} className="text-[14px] py-[10px] px-[24px] rounded-[50px] bg-[#FFCD29] text-white">Daftar Kelas</Link>
           </div>
         </div>
         <div className="space-y-10">

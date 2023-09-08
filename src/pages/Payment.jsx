@@ -9,10 +9,9 @@ import Tabs from "../components/Layouts/Tabs"
 const Payment = () => {
     const location = useLocation()
     const data = location.state.data
-    // console.log({data})
 
     return (
-        <div className="px-[5%] lg:px-[72px] py-[49px]">
+        <div className="px-[5%] lg:px-[72px] py-[49px] mt-20 lg:mt-24">
             <span className="flex items-center gap-2 text-[#6D7175]/60 text-sm">
                 <img src={longLeftArrow} alt="" className="h-3" />
                 <Link to={`/checkout`} state={{ data: data }}>Checkout</Link>
